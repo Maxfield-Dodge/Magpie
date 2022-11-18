@@ -57,7 +57,7 @@ public class Magpie2
 		}
 		return response;
 	}
-
+//
 	/**
 	 * Pick a default response to use if nothing else fits.
 	 * @return a non-committal string
