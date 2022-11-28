@@ -31,11 +31,7 @@ public class Magpie2
 	public String getResponse(String statement)
 	{
 		String response = "";
-		if (statement.indexOf("no") >= 0)
-		{
-			response = "Why so negative?";
-		}
-		else if (statement.indexOf("mother") >= 0
+		if (statement.indexOf("mother") >= 0
 				|| statement.indexOf("father") >= 0
 				|| statement.indexOf("sister") >= 0
 				|| statement.indexOf("brother") >= 0)
@@ -64,6 +60,22 @@ public class Magpie2
 		|| statement.indexOf("Something") >= 0)
 		{
 			response = "Say I'm stupid, please.";
+		}
+		else if (statement.indexOf("weather") >= 0)
+		{
+			response = "The weather's awful, what about you?";
+		}
+		else if (statement.indexOf("travel") >= 0)
+		{
+			response = "I love to travel! What's the coolest place you've been?";
+		}
+		else if (statement.indexOf("?") >= 0)
+		{
+			response = "That's a great question!";
+		}
+		else if (statement.indexOf("no") >= 0)
+		{
+			response = "Why so negative?";
 		}
 		else
 		{
